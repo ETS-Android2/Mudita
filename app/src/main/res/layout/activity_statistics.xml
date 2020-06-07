@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".statistics"
+   android:layout_gravity="center"
+    android:orientation="vertical"
+    android:background="#252029"
+   >
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+          >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+
+                android:orientation="horizontal"
+                android:id="@+id/rlstats1"
+                android:padding="10dp"
+                android:background="@drawable/statscapsule1">
+
+                <ProgressBar
+                    android:id="@+id/progressBarcircular"
+                    style="?android:progressBarStyleHorizontal"
+                    android:layout_width="140dp"
+                    android:layout_height="160dp"
+                    android:layout_centerVertical="true"
+                    android:progress="70"
+                    android:progressDrawable="@drawable/circularprogress"
+                    android:layout_marginTop="25dp"
+                    android:layout_centerHorizontal="true"
+                    android:background="@drawable/circularprogressbg"
+                    >
+
+                </ProgressBar>
+
+              <!--  <TextView
+                    android:id="@+id/performance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="75dp"
+                    android:layout_marginLeft="47dp"
+                    android:layout_toRightOf="@+id/progressBarcircular"
+                    android:fontFamily="@font/anton"
+                    android:text="Performance"
+                    android:textColor="#4D3839"
+                    android:textSize="22sp"></TextView>-->
+
+               <TextView
+                    android:id="@+id/performancenum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:text="69"
+                   android:layout_marginTop="15dp"
+                   android:layout_centerHorizontal="true"
+                   android:textColor="#D6C5AB"
+                   android:layout_centerVertical="true"
+
+                    android:textSize="45dp">
+
+                </TextView>
+
+
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+            android:gravity="center_horizontal"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/anton"
+                    android:text="STATISTICS"
+                    android:textSize="35dp"></TextView>
+
+
+
+            </LinearLayout>
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="35dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="60dp">
+
+                <ListView
+                    android:id="@+id/listviewstats"
+                    android:layout_width="match_parent"
+                    android:divider="@android:color/transparent"
+                    android:dividerHeight="15dp"
+                    android:layout_height="420dp">
+
+                </ListView>
+            </LinearLayout>
+            </ScrollView>
+
+
+        </LinearLayout>
+
+
+
+</LinearLayout>

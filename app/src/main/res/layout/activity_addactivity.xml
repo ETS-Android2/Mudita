@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C36"
+    android:orientation="vertical"
+    tools:context=".addactivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="815dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:elevation="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/addtext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:fontFamily="@font/ranchers"
+                android:text="ADD"
+                android:textColor="#C3534E"
+                android:textSize="35sp"></TextView>
+
+            <ImageView
+                android:id="@+id/addactundraw"
+                android:layout_width="260dp"
+                android:layout_height="185dp"
+                android:src="@drawable/addactundraw"></ImageView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="420dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/addactcapule1"
+                android:layout_width="325dp"
+                android:layout_height="78dp"
+                android:layout_alignStart="@+id/addactcapule1"
+                android:background="@drawable/addactcap1"
+                android:fontFamily="@font/fanwood_text_italic"
+                android:hint="Medicine Name"
+                android:paddingLeft="30dp"
+
+                android:textAlignment="inherit"
+                android:textColor="#E8E8E8"
+                android:textColorHint="#E8E8E8"
+                android:textSize="19sp">
+
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/addactcapule2"
+                android:layout_width="325dp"
+                android:layout_height="78dp"
+                android:layout_alignStart="@+id/addactcapule1"
+                android:background="@drawable/addactcap2"
+                android:fontFamily="@font/fanwood_text_italic"
+                android:hint="Number of Doses"
+                android:paddingLeft="30dp"
+
+
+                android:textAlignment="inherit"
+                android:textColor="#E8E8E8"
+                android:textColorHint="#E8E8E8">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/addactcapule3"
+                android:layout_width="325dp"
+                android:layout_height="78dp"
+                android:layout_alignStart="@+id/addactcapule1"
+                android:background="@drawable/addactcap3"
+                android:fontFamily="@font/fanwood_text_italic"
+                android:text="Select the day/days"
+                android:paddingLeft="30dp"
+                android:textSize="19sp"
+              android:paddingTop="23dp"
+                android:textColor="#E8E8E8"
+                android:textColorHint="#E8E8E8">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/addactcapule4"
+                android:layout_width="325dp"
+                android:layout_height="78dp"
+                android:layout_alignStart="@+id/addactcapule1"
+                android:background="@drawable/addactcap4"
+                android:fontFamily="@font/fanwood_text_italic"
+                android:hint="Select time"
+                android:paddingLeft="30dp"
+                android:textSize="19sp"
+                android:paddingTop="23dp"
+                android:textAlignment="inherit"
+                android:textColor="#E8E8E8"
+                android:textColorHint="#E8E8E8">
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="25dp">
+
+                <TextView
+                    android:id="@+id/donetext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="165dp"
+                    android:layout_marginTop="17dp"
+                    android:fontFamily="@font/lilita_one"
+                    android:text="Done"
+                    android:textColor="#FFFFFF"
+                    android:textSize="25dp"></TextView>
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/donetext"
+                    android:src="@drawable/addacttick"></ImageView>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="25dp"
+            android:gravity="center_horizontal|bottom">
+
+            <ImageView
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/addactdots"></ImageView>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

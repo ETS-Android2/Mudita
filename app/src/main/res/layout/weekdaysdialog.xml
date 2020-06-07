@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C2C36">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+   >
+
+        <TextView
+            android:id="@+id/weekdaystext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/adamina"
+            android:gravity="center_horizontal"
+            android:text="Select the days"
+            android:textColor="#C2514C"
+            android:textColorHint="#FFFFFF"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="15dp">
+
+        <CheckBox
+            android:id="@+id/weekcb1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:buttonTint="#0E5EB4"
+            android:text="Sunday"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/weekcb2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0E5EB4"
+            android:text="Monday"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/weekcb3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0E5EB4"
+            android:text="Tuesday"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/weekcb4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0E5EB4"
+            android:text="Wednesday"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/weekcb5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0E5EB4"
+            android:text="Thursday"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/weekcb6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0E5EB4"
+            android:text="Friday"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/weekcb7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="#0E5EB4"
+            android:text="Saturday"></CheckBox>
+    </LinearLayout>
+
+</LinearLayout>

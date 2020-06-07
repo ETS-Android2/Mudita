@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".missedact"
+    android:background="#252029"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/missedlayout1"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/missedtext"
+            android:layout_width="wrap_content"
+            android:layout_height="84dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="37dp"
+            android:fontFamily="@font/anton"
+            android:text="Missed"
+            android:textColor="#D6C5A5"
+            android:textSize="60sp" />
+
+        <TextView
+            android:id="@+id/nothingtopanic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="41dp"
+            android:layout_marginTop="2dp"
+            android:padding="2dp"
+            android:fontFamily="@font/average"
+            android:text="Nothing to panic! We will do better" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/adamina"
+            android:text="Things we missed in last two weeks"
+            android:textColor="#A48D0F"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        >
+        <ListView
+            android:id="@+id/missedlistview"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_height="425dp"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="20dp"
+            android:paddingTop="5dp"
+            android:elevation="10dp"
+
+            android:scrollbarStyle="insideInset"
+            >
+
+        </ListView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

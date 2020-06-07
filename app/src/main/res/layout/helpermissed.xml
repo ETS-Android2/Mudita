@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:id="@+id/helpermissedlay"
+    android:elevation="10dp">
+
+    <LinearLayout
+        android:id="@+id/helpermissedlay1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@drawable/missedcapluse"
+        android:elevation="10dp">
+
+        <TextView
+            android:id="@+id/missedmed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/average"
+            android:text="@string/medicinemissed"
+            android:textColor="#D6C5AB"
+            android:textSize="35sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+           android:gravity="center_horizontal"
+            android:fontFamily="@font/average"
+            android:text="@string/numbermissed"
+            android:textColor="#EA6161"
+            android:id="@+id/numbermissed"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

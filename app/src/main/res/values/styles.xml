@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- Base application theme. -->
+
+    <style name="NoActionBar" parent="Theme.AppCompat.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+    <!--<style name="AlertDialogweekdays" >
+         <item name="android:colorAccent">#2C2C36</item>
+         <item name="android:textColor">#f3f3f3</item>
+         <item name="android:textColorPrimary">#f3f3f3</item>
+     </style>-->
+    <style name="AlertDialogweekdays" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">#2C2C36</item>
+        <item name="android:textColor">#D9920D</item>
+    </style>
+
+    <style name="AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "54602214578",
+    "firebase_url": "https://mudita-c770c.firebaseio.com",
+    "project_id": "mudita-c770c",
+    "storage_bucket": "mudita-c770c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54602214578:android:bbe8ff8cbc1979547eadab",
+        "android_client_info": {
+          "package_name": "com.example.mudita"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54602214578-q52n37jfjiapmmetmfdj4vuip4bimfo3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mudita",
+            "certificate_hash": "afe9b4bd04b5c4660669e39ba29a27610c9a9a33"
+          }
+        },
+        {
+          "client_id": "54602214578-2hsiugvb3evnnnsk1kprtqtl08ufen21.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC50be915CkVsyOC-KWrfZo-MVYXBAdAwE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54602214578-7cm3pnrljgbmi22l4k1b7nonjf27daqh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

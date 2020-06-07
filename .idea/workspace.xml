@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8bef5858-afa8-4af6-af52-023fb9e2bdf7" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="eb484e67" />
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Mudita" type="f1a62948:ProjectNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Mudita" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Mudita" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="android" type="c8890929:TasksNode$1" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Mudita" type="f1a62948:ProjectNode" />
+                <item name="app" type="2d1252cf:ModuleNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Mudita" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="valueResourceFile" />
+        <option value="layoutResourceFile" />
+        <option value="resourceFile" />
+        <option value="layoutResourceFile_vertical" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1Zqopc5JJnpqaIjCOxk8qsyRGnq" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_XL_API_28" />
+    <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-30T18:18:32.243Z" />
+    <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v21" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Build Variants" />
+    <property name="project.structure.proportion" value="0.17" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.splitter.proportion" value="0.24852072" />
+  </component>
+  <component name="PsdUISettings">
+    <option name="MODULE_TAB" value="Default Config" />
+    <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\build" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.example.mudita" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res\drawable-v21" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\build" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Android App.app">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Mudita [signingReport]" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="signingReport" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8bef5858-afa8-4af6-af52-023fb9e2bdf7" name="Default Changelist" comment="" />
+      <created>1585576168386</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585576168386</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Splashscreen(without graphics)&#10;Loginscreen done(without forgot password)">
+      <created>1585666722775</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1585666722775</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen">
+      <created>1585845829249</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1585845829249</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Trying Google Sign in">
+      <created>1585860667120</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1585860667121</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)">
+      <created>1585937016959</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1585937016959</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)">
+      <created>1586002560704</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1586002560704</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress">
+      <created>1587160953492</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1587160953492</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation reguired.">
+      <created>1589405949931</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1589405949932</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!">
+      <created>1590586592177</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1590586592177</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.">
+      <created>1591377490878</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1591377490878</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)">
+      <created>1591536414368</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591536414368</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Splashscreen(without graphics)&#10;Loginscreen" />
+    <MESSAGE value="Splashscreen(without graphics)&#10;Loginscreen done(without forgot password)" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Trying Google Sign in" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation reguired." />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen." />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-common/5.15.3/da10d66520c279b843992c24893cab96eb471e65/facebook-common-5.15.3-sources.jar!/com/facebook/FacebookCallback.java</url>
+          <line>44</line>
+          <properties class="com.facebook.FacebookCallback" method="onSuccess">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
