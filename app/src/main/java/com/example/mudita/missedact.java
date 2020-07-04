@@ -16,7 +16,6 @@ import android.widget.TextView;
 
 public class missedact extends AppCompatActivity {
     private ListView listView;
-    private Adapter madapter;
     private String Medname[] = {"Azithrom 500", "Rosiflex 500", "Livsave Syrup", "Drep Ear Drop", "SumoCold 20"};
     private String times[] = {"2", "3", "1", "4", "2"};
 

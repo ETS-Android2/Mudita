@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +8,7 @@
     tools:context=".ui.home.HomeFragment"
     android:background="#DDDBDE"
     android:orientation="vertical">
+
 
     <ScrollView
         android:layout_width="match_parent"
@@ -55,8 +57,22 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="50dp"
                         android:layout_marginBottom="20dp"
-                        android:elevation="10dp"
-                        android:src="@drawable/timecards" />
+                        android:src="@drawable/timecards"
+                        />
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginBottom="20dp"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="27sp"
+                        android:textColor="#FAF5F5"
+                        android:id="@+id/daystxt"/>
+
+
+
 
                     <ImageView
                         android:id="@+id/card1"
@@ -66,8 +82,20 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="85dp"
                         android:layout_marginBottom="20dp"
-                        android:elevation="10dp"
                         android:src="@drawable/timecards" />
+                    />
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignLeft="@+id/card"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="27sp"
+                        android:textColor="#FAF5F5"
+                        android:id="@+id/hourstxt"/>
 
                     <ImageView
                         android:id="@+id/card2"
@@ -77,8 +105,19 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="85dp"
                         android:layout_marginBottom="20dp"
-                        android:elevation="10dp"
                         android:src="@drawable/timecards" />
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignLeft="@+id/card1"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="27sp"
+                        android:textColor="#FAF5F5"
+                        android:id="@+id/minstxt"/>
 
                     <ImageView
 
@@ -89,8 +128,19 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="85dp"
                         android:layout_marginBottom="20dp"
-                        android:elevation="10dp"
                         android:src="@drawable/timecards" />
+                    <TextView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="85dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_alignLeft="@+id/card2"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textSize="27sp"
+                        android:textColor="#FAF5F5"
+                        android:id="@+id/sectxt"/>
 
                     <TextView
                         android:id="@+id/days"

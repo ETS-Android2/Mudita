@@ -89,7 +89,7 @@
                 android:layout_alignStart="@+id/addactcapule1"
                 android:background="@drawable/addactcap3"
                 android:fontFamily="@font/fanwood_text_italic"
-                android:text="Select the day/days"
+                android:hint="Select the day/days"
                 android:paddingLeft="30dp"
                 android:textSize="19sp"
               android:paddingTop="23dp"
@@ -137,7 +137,8 @@
                     android:layout_marginLeft="5dp"
                     android:layout_marginTop="20dp"
                     android:layout_toEndOf="@+id/donetext"
-                    android:src="@drawable/addacttick"></ImageView>
+                    android:src="@drawable/addacttick"
+                    android:id="@+id/doneview"></ImageView>
             </RelativeLayout>
 
 

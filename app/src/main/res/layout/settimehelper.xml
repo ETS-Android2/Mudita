@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/settimetextid"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="Set Time 1"
+            android:background="@drawable/settimedrawable"
+            android:paddingLeft="15dp"
+            android:gravity="center_vertical"
+            android:textSize="18sp"
+           android:layout_marginTop="10dp"
+            ></TextView>
+
+        <TextView
+            android:id="@+id/timetextid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:background="#2C2C36"
+            android:fontFamily="@font/ranchers"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:text="Time 1"
+            android:textColor="#132DBC"
+            android:textSize="14sp"></TextView>
+
+    </RelativeLayout>
+ </LinearLayout>

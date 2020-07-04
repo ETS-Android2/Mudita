@@ -6,11 +6,24 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="Time" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
     <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bef5858-afa8-4af6-af52-023fb9e2bdf7" name="Default Changelist" comment="" />
+    <list default="true" id="8bef5858-afa8-4af6-af52-023fb9e2bdf7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/DBtoPhone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/GlobalVariables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/Medtimeobj.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/DaystoDB.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/DaystoDB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/Mainscreen1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/Mainscreen1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/Registerscreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/Registerscreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/addactivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/addactivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/ui/home/HomeFragment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mainscreen1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mainscreen1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,30 +101,33 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/app/src/main/res/drawable-v21" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Build Variants" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="settings.editor.splitter.proportion" value="0.24852072" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Default Config" />
     <option name="LAST_EDITED_SIGNING_CONFIG" value="debug" />
-    <option name="LAST_EDITED_BUILD_TYPE" value="release" />
+    <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\build" />
-      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app" />
-    </key>
-    <key name="android.template.packageName">
-      <recent name="com.example.mudita" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app" />
       <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res\drawable-v21" />
       <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res" />
       <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\build" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.example.mudita" />
+    </key>
+    <key name="android.template.packageName">
+      <recent name="com.example.mudita" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\build" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -286,7 +302,42 @@
       <option name="project" value="LOCAL" />
       <updated>1591536414368</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)">
+      <created>1591730010387</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1591730010387</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)">
+      <created>1591802985524</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1591802985524</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)">
+      <created>1592861164546</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1592861164546</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database.">
+      <created>1593103926024</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1593103926024</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database.&#10;Timer is showing the time left for the next activity">
+      <created>1593871190110</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1593871190110</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -325,7 +376,12 @@
     <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!" />
     <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen." />
     <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database." />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database.&#10;Timer is showing the time left for the next activity" />
+    <option name="LAST_COMMIT_MESSAGE" value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database.&#10;Timer is showing the time left for the next activity" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

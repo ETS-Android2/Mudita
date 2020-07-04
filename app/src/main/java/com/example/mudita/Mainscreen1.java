@@ -2,6 +2,7 @@ package com.example.mudita;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Log;
 import android.view.View;
 import android.view.Menu;
@@ -23,6 +24,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 import androidx.navigation.NavController;
@@ -33,6 +35,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
+import java.util.ArrayList;
+
 public class Mainscreen1 extends AppCompatActivity {
     private Button Signoutbutton;
     private GoogleSignIn googleSignIn;
@@ -41,12 +45,18 @@ public class Mainscreen1 extends AppCompatActivity {
     private FirebaseAuth firebaseAuth;
     private String usernamestr,profileurl;
     private static final String TAG="facebook";
+    private DBtoPhone dBtoPhone;
+    private int delay=1000;
+    private int melay=10000;
+    private static ArrayList<Medtimeobj> medtimeobjs=new ArrayList<>();
+    private HomeFragment homeFragment;
 
 
     private AppBarConfiguration mAppBarConfiguration;
 
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mainscreen1);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -59,7 +69,7 @@ public class Mainscreen1 extends AppCompatActivity {
         Log.d(TAG,"MainScreen1 profileUrl "+profileurl);
         FragmentManager fm=getSupportFragmentManager();
         FragmentTransaction t=fm.beginTransaction();
-        HomeFragment homeFragment=new HomeFragment();
+        homeFragment=new HomeFragment();
         Bundle bundle=new Bundle();
        bundle.putString("username",usernamestr);
        bundle.putString("photourl",profileurl);
@@ -126,10 +136,65 @@ public class Mainscreen1 extends AppCompatActivity {
 
 
 
+        //DataBase to Mainscreen
+       /* dBtoPhone=new DBtoPhone();
+        dBtoPhone.Retriveperday();
+        Log.d("DBtoPhone",""+dBtoPhone.alistmedname.size(),null);*/
 
 
 
 }
+         //onresume
+         @Override
+         public void onResume() {
+             super.onResume();
+
+             //DataBase to Mainscreen
+             dBtoPhone = new DBtoPhone();
+             dBtoPhone.Retriveperday();
+             final Handler handler = new Handler();
+             handler.postDelayed(new Runnable() {
+                 @Override
+                 public void run() {
+                     if (dBtoPhone.medtimeobjsalist != null && !dBtoPhone.medtimeobjsalist.isEmpty()) {
+                         if (medtimeobjs.size() != 0) {
+                             medtimeobjs.clear();
+                         }
+                         for (int i = 0; i < dBtoPhone.medtimeobjsalist.size(); i++) {
+                             medtimeobjs.add(dBtoPhone.medtimeobjsalist.get(i));
+                             Log.d("tuhaikinhi", " " + medtimeobjs.get(medtimeobjs.size() - 1).getMedicine(), null);
+                         }
+
+                         homeFragment= (HomeFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+                         if(homeFragment!=null)
+                         {homeFragment.timerstart(medtimeobjs);
+                             Log.d("fragmentnull","null nhi he",null);}
+                         else
+                         { Log.d("fragmentnull","null he..",null);}
+
+                         Log.d("Sizeofmedtime007", "" + medtimeobjs.size(), null);
+                     } else if (melay > 0) {
+                         melay = melay - delay;
+
+                         handler.postDelayed(this, delay);
+                         Log.d("tuhaikinhi", " " + "nhi he intezar kr", null);
+                     }
+
+                 }
+             }, delay);
+            }
+
+
+        //agar melay<=0 he to internet on karne bolna hoga.(ek alert deke)
+
+    //}
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+
+        Log.d("Sizeofmedtime",""+medtimeobjs.size(),null);
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -144,4 +209,5 @@ public class Mainscreen1 extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 }
