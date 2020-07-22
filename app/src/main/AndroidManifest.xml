@@ -1,31 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mudita">
+
 
     <uses-permission android:name="android.permission.INTERNET" />
 
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- Need to receive a broadcast when the system reboots -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+
+
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/pinkumbrella"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/circularprogress"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
-        android:name=".GlobalVariables"
+
+        android:name=".DiskpersistenceHelper"
+        tools:ignore="LockedOrientationActivity"
 
        >
         <!-- in android:name   (.DiskpersistenceHelper is also added (using inheritance)-->
-        <activity android:name=".addactivity"></activity>
-        <activity android:name=".missedact" />
-        <activity android:name=".statistics" />
+
+        <receiver android:name=".AlarmReciever"></receiver>
+        <receiver android:name=".AppGlobalReciever"></receiver>
+        <!-- For listening to device reboot to reschedule alarms -->
+        <receiver android:name=".BootReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+
+        <activity android:name=".addactivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"></activity>
+        <activity android:name=".missedact"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".statistics"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".Mainscreen1"
             android:label="@string/title_activity_mainscreen1"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
             android:theme="@style/NoActionBar" />
-        <activity android:name=".Registerscreen" />
-        <activity android:name=".Welcomescreen" />
-        <activity android:name=".Loginscreen" />
-        <activity android:name=".Splashscreen">
+        <activity android:name=".Registerscreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Welcomescreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Loginscreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".Splashscreen"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

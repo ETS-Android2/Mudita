@@ -33,10 +33,23 @@
     <string name="fb_login_protocol_scheme">fb687325862038410</string>
     <string name="medicinemissed">AZITHROM 500</string>
     <string name="numbermissed">Missed 4 times</string>
+    <string name="channelname1">Alarm Ring</string>
+    <string name="channelDescription1">Rings when it is time for taking medicine with high importance</string>
+    <string name="channelname2">Alarm Ring MAX</string>
+    <string name="channelDescription2">Rings when it is time for taking medicine with max importance</string>
+    <string name="action_notify_admin">com.example.mudita.action.ADMINISTER_MEDICATION</string>
+    <string name="administer">Administer</string>
+    <string name="action_medicine_administered">com.example.mudita.action.ADMINISTERED_MEDICINE</string>
+
+
 
 
     <string name="home_second">Home Second</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="DoneAction">Done</string>
+    <string name="CancelAction">Cancel</string>
+    <string name="MissedAction">Missed</string>
+
 </resources>

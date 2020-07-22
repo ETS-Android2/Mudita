@@ -36,6 +36,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 
 public class Mainscreen1 extends AppCompatActivity {
     private Button Signoutbutton;
@@ -49,7 +50,10 @@ public class Mainscreen1 extends AppCompatActivity {
     private int delay=1000;
     private int melay=10000;
     private static ArrayList<Medtimeobj> medtimeobjs=new ArrayList<>();
+    private  ArrayList<Medtimeobj> arrayList=new ArrayList<>();
     private HomeFragment homeFragment;
+    private Medtimeobj obj;
+    private String checkones=new String();
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -76,6 +80,7 @@ public class Mainscreen1 extends AppCompatActivity {
        homeFragment.setArguments(bundle);
        t.add(R.id.nav_host_fragment,homeFragment);
        t.commit();
+
         /*replace(R.id.container,homeFragment).commit();*/
 
         //NO NEED TO USE SEPARATE SIGN OUT CHECK SINCE WE CAN SIGN OUT USING FIREBASE
@@ -142,12 +147,13 @@ public class Mainscreen1 extends AppCompatActivity {
         Log.d("DBtoPhone",""+dBtoPhone.alistmedname.size(),null);*/
 
 
-
+        DiskpersistenceHelper.bgfgmainscreen=true;
 }
          //onresume
          @Override
          public void onResume() {
              super.onResume();
+             DiskpersistenceHelper.bgfgmainscreen=true;
 
              //DataBase to Mainscreen
              dBtoPhone = new DBtoPhone();
@@ -167,7 +173,29 @@ public class Mainscreen1 extends AppCompatActivity {
 
                          homeFragment= (HomeFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
                          if(homeFragment!=null)
-                         {homeFragment.timerstart(medtimeobjs);
+                         { NotificationHelper.createSampleDataNotification(getApplicationContext(),"Reminder","HI,ALL GOOD?",true);
+                            arrayList=homeFragment.timerstart(medtimeobjs);
+                            //check arraylist
+                             for(int j=0;j<arrayList.size();j++)
+                             {Log.d("arraylistcheck","j="+j+" "+arrayList.get(j).getMedicine()+" "+arrayList.get(j).getTime(),null);}
+                            if(!checkones.equals(arrayList.get(0).getTime())&&arrayList.size()!=0)
+                            {   AlarmScheduler.removeAlarmsForReminder(getApplicationContext(),arrayList);
+                                AlarmScheduler.Schedulealarmfromdata(getApplicationContext(),arrayList, arrayList.get(0).getDay());
+                                //update everday
+                                {
+                                    ArrayList<Medtimeobj> updatelist = new ArrayList<>();
+                                    Medtimeobj ob1=new Medtimeobj();
+                                    ob1.setMedicine("Update491");
+                                    ob1.setTime("002");
+                                    ob1.setDay(arrayList.get(0).getDay());
+                                    updatelist.add(ob1);
+                                    AlarmScheduler.removeAlarmsForReminder(getApplicationContext(),updatelist);
+                                    AlarmScheduler.Schedulealarmfromdata(getApplicationContext(),updatelist, arrayList.get(0).getDay());
+                                }
+                            checkones=""+arrayList.get(0).getTime();
+                            }
+
+
                              Log.d("fragmentnull","null nhi he",null);}
                          else
                          { Log.d("fragmentnull","null he..",null);}
@@ -192,6 +220,7 @@ public class Mainscreen1 extends AppCompatActivity {
     @Override
     protected void onPostResume() {
         super.onPostResume();
+        DiskpersistenceHelper.bgfgmainscreen=false;
 
         Log.d("Sizeofmedtime",""+medtimeobjs.size(),null);
     }
@@ -210,4 +239,9 @@ public class Mainscreen1 extends AppCompatActivity {
                 || super.onSupportNavigateUp();
     }
 
+    @Override
+    protected void onDestroy() {
+        DiskpersistenceHelper.bgfgmainscreen=false;
+        super.onDestroy();
+    }
 }

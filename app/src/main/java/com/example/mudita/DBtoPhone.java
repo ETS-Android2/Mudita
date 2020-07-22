@@ -73,18 +73,20 @@ public class DBtoPhone {
           querymed = DRday.orderByKey();
           alistmedname = new ArrayList<>();
 
+          final String finalToday = Today+"";
           querymed.addValueEventListener(new ValueEventListener()
            {
               @Override
               public void onDataChange(@NonNull DataSnapshot snapshot) {
                   if(snapshot!=null)
                   {  alistmedname.clear();
-                  medtimeobjsalist = new ArrayList<Medtimeobj>();
+                  medtimeobjsalist = new ArrayList<>();
                   for (DataSnapshot ds : snapshot.getChildren()) {
                       alistmedname.add(ds.getKey());
 
                       Log.d("Medicine", "" + alistmedname.get(alistmedname.size() - 1), null);
-                  if(!medtimeobjsalist.isEmpty()){medtimeobjsalist.clear();}
+                  if(!medtimeobjsalist.isEmpty())
+                  {medtimeobjsalist.clear();}
                   }
                   for (int i = 0; i <alistmedname.size(); i++) {
                       String str = alistmedname.get(i);
@@ -105,6 +107,7 @@ public class DBtoPhone {
                                           Medtimeobj medtimeobj = new Medtimeobj();
                                           medtimeobj.setMedicine(medplustime);
                                           medtimeobj.setTime(DS.getValue().toString());
+                                          medtimeobj.setDay(finalToday);
                                           medtimeobjsalist.add(medtimeobj);
                                           Log.d("m321", "" + medtimeobj.getMedicine()+" "+medtimeobj.getTime(), null);
                                       }
