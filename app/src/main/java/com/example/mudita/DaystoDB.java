@@ -19,10 +19,11 @@ public class DaystoDB {
     private final String TAG1 = "DAYS";
     private final String TAG2 = "TIME";
     private FirebaseDatabase databaseroot;
-    private DatabaseReference reference;
+    private DatabaseReference reference,medicinex491;
     private String userid;
     private FirebaseAuth auth;
     private ArrayList<String> medtime=new ArrayList<String>();
+    private int TotalDoses;
 
 
     private int arr[] = {0, 0, 0, 0, 0, 0, 0};
@@ -255,6 +256,13 @@ public class DaystoDB {
             }
 
         }
+        TotalDoses=Integer.parseInt(doses);//Total Doses
+        medicinex491=refuser.child("MedicineX_491");
+        DatabaseReference medname1=medicinex491.child(Medicinenamestr);
+        medname1.child("TotalDoses").setValue(doses);
+        medname1.child("Taken").setValue("1");
+        medname1.child("Outof").setValue("1");
+        medname1.child("Missed").setValue("0");
 
 
     return 1;}

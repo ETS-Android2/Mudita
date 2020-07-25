@@ -53,7 +53,7 @@ public class Mainscreen1 extends AppCompatActivity {
     private  ArrayList<Medtimeobj> arrayList=new ArrayList<>();
     private HomeFragment homeFragment;
     private Medtimeobj obj;
-    private String checkones=new String();
+    private static String checkones=new String();
 
 
     private AppBarConfiguration mAppBarConfiguration;
@@ -147,13 +147,13 @@ public class Mainscreen1 extends AppCompatActivity {
         Log.d("DBtoPhone",""+dBtoPhone.alistmedname.size(),null);*/
 
 
-        DiskpersistenceHelper.bgfgmainscreen=true;
+
 }
          //onresume
          @Override
          public void onResume() {
              super.onResume();
-             DiskpersistenceHelper.bgfgmainscreen=true;
+
 
              //DataBase to Mainscreen
              dBtoPhone = new DBtoPhone();
@@ -174,11 +174,16 @@ public class Mainscreen1 extends AppCompatActivity {
                          homeFragment= (HomeFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
                          if(homeFragment!=null)
                          { NotificationHelper.createSampleDataNotification(getApplicationContext(),"Reminder","HI,ALL GOOD?",true);
-                            arrayList=homeFragment.timerstart(medtimeobjs);
+                         //pehle ke set alarms ko hatayega
+                        /* AlarmScheduler.removeAlarmsForReminder(getApplicationContext(),arrayList);*/
+                          //naya list
+                         arrayList=homeFragment.timerstart(medtimeobjs);
                             //check arraylist
                              for(int j=0;j<arrayList.size();j++)
-                             {Log.d("arraylistcheck","j="+j+" "+arrayList.get(j).getMedicine()+" "+arrayList.get(j).getTime(),null);}
-                            if(!checkones.equals(arrayList.get(0).getTime())&&arrayList.size()!=0)
+                             {
+                                 Log.d("arraylistcheck","j="+j+" "+arrayList.get(j).getMedicine()+" "+arrayList.get(j).getTime(),null);
+                             }
+                            if(arrayList.size()!=0&&!checkones.equals(arrayList.get(0).getTime()))
                             {   AlarmScheduler.removeAlarmsForReminder(getApplicationContext(),arrayList);
                                 AlarmScheduler.Schedulealarmfromdata(getApplicationContext(),arrayList, arrayList.get(0).getDay());
                                 //update everday
@@ -220,7 +225,7 @@ public class Mainscreen1 extends AppCompatActivity {
     @Override
     protected void onPostResume() {
         super.onPostResume();
-        DiskpersistenceHelper.bgfgmainscreen=false;
+
 
         Log.d("Sizeofmedtime",""+medtimeobjs.size(),null);
     }
@@ -241,7 +246,7 @@ public class Mainscreen1 extends AppCompatActivity {
 
     @Override
     protected void onDestroy() {
-        DiskpersistenceHelper.bgfgmainscreen=false;
+
         super.onDestroy();
     }
 }

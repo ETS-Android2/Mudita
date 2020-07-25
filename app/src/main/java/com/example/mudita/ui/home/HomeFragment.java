@@ -8,6 +8,7 @@ import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.media.RingtoneManager;
 import android.os.Build;
 import android.os.Bundle;
@@ -20,6 +21,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,8 +35,10 @@ import com.example.mudita.DBtoPhone;
 import com.example.mudita.DiskpersistenceHelper;
 import com.example.mudita.Mainscreen1;
 import com.example.mudita.Medtimeobj;
+import com.example.mudita.Myadapter2;
 import com.example.mudita.NotificationHelper;
 import com.example.mudita.R;
+import com.example.mudita.Token;
 import com.example.mudita.Welcomescreen;
 import com.example.mudita.addactivity;
 import com.example.mudita.missedact;
@@ -44,15 +48,26 @@ import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
+import com.google.firebase.iid.InstanceIdResult;
 import com.squareup.picasso.Picasso;
 
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.Map;
 import java.util.Random;
+import java.util.Set;
 
 import static com.facebook.FacebookSdk.getApplicationContext;
 
@@ -85,6 +100,7 @@ public class HomeFragment extends Fragment {
         //Profile photo and username
 
 
+
         //Tips
         tipno = new Random().nextInt(15);
         tipstr = "tip" + tipno;
@@ -113,13 +129,45 @@ public class HomeFragment extends Fragment {
             Log.d(TAG,"Parent Frag"+sr);}
         catch (Exception e)
         {Log.d(TAG,"Parent Frag"+sr);}*/
+      SharedPreferences sharedPreferences=getApplicationContext().getSharedPreferences(getString(R.string.usernameshpref),Context.MODE_PRIVATE);
+
+
 
         usernametxt = (TextView) root.findViewById(R.id.usernamemain);
         profilepic = (ImageView) root.findViewById(R.id.usericon);
         Log.d(TAG, "We are on HomeFrag: " + usernamestr);
         Log.d(TAG, "We are on HomeFrag: " + profileurl);
+
+
+
+       //Dekhlo jo tum dhund rhe ho khi woh yehi to nhi
         if (!usernamestr.equals("noname")) {
             usernametxt.setText(usernamestr);
+            SharedPreferences.Editor editor=sharedPreferences.edit();
+            editor.putString("usernamecurr",usernamestr.trim());
+            editor.apply();
+        /*  DatabaseReference rootdb=FirebaseDatabase.getInstance().getReference();
+        FirebaseUser user=firebaseAuth.getCurrentUser();*/
+       FirebaseInstanceId.getInstance().getInstanceId().addOnCompleteListener(new OnCompleteListener<InstanceIdResult>() {
+
+            @Override
+            public void onComplete(@NonNull Task<InstanceIdResult> task) {
+                if(!task.isSuccessful())
+                { }
+                else
+                {
+                    String refreshtoken=task.getResult().getToken();
+                    updateToken(refreshtoken);
+                }
+
+            }
+        });
+
+
+
+
+
+         /* rootdb.child("Token").child(usernamestr).setValue();*/
         } else if (usernamestr == null || usernamestr == "noname") {
             usernametxt.setText("UserName");
         }
@@ -192,7 +240,7 @@ public class HomeFragment extends Fragment {
         missed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent3 = new Intent(getActivity(), missedact.class);
+                 Intent intent3 = new Intent(getActivity(), missedact.class);
                 startActivity(intent3);
             }
         });
@@ -211,16 +259,25 @@ public class HomeFragment extends Fragment {
     }
 
     public ArrayList<Medtimeobj> timerstart(ArrayList<Medtimeobj> arrayList) {
-        Collections.sort(arrayList, new Comparator<Medtimeobj>() {
-            @Override
-            public int compare(Medtimeobj o1, Medtimeobj o2) {
-                int a, b;
-                a = Integer.parseInt(o1.getTime());
-                b = Integer.parseInt(o2.getTime());
-                return a < b ? -1 : 1;
+           if(arrayList.size()==0)
+           {return arrayList;}
+           try {  Collections.sort(arrayList, new Comparator<Medtimeobj>() {
+               @Override
+               public int compare(Medtimeobj o1, Medtimeobj o2) {
+                   int a, b;
+                   a = Integer.parseInt(o1.getTime());
+                   b = Integer.parseInt(o2.getTime());
+                   return a < b ? -1 : 1;
 
-            }
-        });
+               }
+           });
+
+           }
+           catch (IllegalArgumentException e)
+           {Log.d("Exception"," "+e ,null);
+           return arrayList;}
+
+
         Calendar calendar = Calendar.getInstance();
         int hour, min, sec;
         hour = calendar.get(Calendar.HOUR_OF_DAY);
@@ -315,8 +372,11 @@ public class HomeFragment extends Fragment {
                 mintxt.setText(mm);
                 sectxt.setText(ss);
                 StringBuilder med=new StringBuilder();
-                med.append(Medicinestr,0,Medicinestr.length()-5);
-                medtxt.setText(med.toString());
+                if(Medicinestr.length()>5)
+                { med.append(Medicinestr,0,Medicinestr.length()-5);
+                medtxt.setText(med.toString());}
+                else
+                { medtxt.setText(".......");}
 
 
             }
@@ -406,4 +466,12 @@ public class HomeFragment extends Fragment {
 
 
     }*/
+       private void updateToken(String refreshtoken) {
+           FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();
+           Token token1=new Token(refreshtoken);
+           SharedPreferences sharedPreferences=getApplicationContext().getSharedPreferences(getString(R.string.usernameshpref),getApplicationContext().MODE_PRIVATE);
+           String username=sharedPreferences.getString("usernamecurr",null);
+           FirebaseDatabase.getInstance().getReference().child("Tokens").child(username).setValue(token1);
+       }
+
 }

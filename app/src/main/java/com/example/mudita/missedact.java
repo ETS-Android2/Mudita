@@ -5,7 +5,9 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,45 +16,97 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
+
 public class missedact extends AppCompatActivity {
     private ListView listView;
-    private String Medname[] = {"Azithrom 500", "Rosiflex 500", "Livsave Syrup", "Drep Ear Drop", "SumoCold 20"};
-    private String times[] = {"2", "3", "1", "4", "2"};
+    private  ArrayList<String> Medname=new ArrayList<>();
+    private  ArrayList<String> times=new ArrayList<>();
+    private  String[] Mednamearr;
+    private  String[] timesarr;
+    private FirebaseDatabase databaseroot;
+    private FirebaseAuth auth;
+    private String userid;
+
+
+
+    private Context context;
+    private  DatabaseReference user,medicinex491;
+
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_missedact);
-        Myadapter2 myadapter2 = new Myadapter2(this, Medname, times);
+        setContext(this);
+
         listView = (ListView) findViewById(R.id.missedlistview);
-        myadapter2.getView(4, null, listView);
-        listView.setAdapter(myadapter2);
+        databaseroot=FirebaseDatabase.getInstance();
+        auth=FirebaseAuth.getInstance();
+        userid=auth.getCurrentUser().getUid(); //String
+        user=databaseroot.getReference("user").child(userid);
+        medicinex491=user.child("MedicineX_491");
+        medicinex491.addListenerForSingleValueEvent(new ValueEventListener() {
+            int num,missednum;
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                Medname.clear();
+                times.clear();
+                for(DataSnapshot ds:snapshot.getChildren())
+                { missednum=Integer.parseInt(ds.child("Missed").getValue().toString());
+                 if(missednum>0)
+                 {Medname.add(ds.getKey());
+                   times.add(String.valueOf(missednum));
+                 }
+                }
+                Log.d("missednumcheck"," "+missednum,null);
+                num=Medname.size();
+                Mednamearr=new String[num];
+                timesarr=new String[num];
+                for(int i=0;i<Medname.size();i++)
+                {Mednamearr[i]=Medname.get(i);
+                timesarr[i]=times.get(i);
+                }
+                Myadapter2 myadapter2 = new Myadapter2(getContext(), Mednamearr, timesarr);
+                if(num==0)
+                {  myadapter2.getView(0, null, listView);}
+                else
+                {myadapter2.getView(num-1, null, listView);}
+                listView.setAdapter(myadapter2);
+
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+
+
+
+
 
 
     }
+    public Context getContext() {
+        return context;
+    }
+
+    public void setContext(Context context) {
+        this.context = context;
+    }
+
+
 }
-
-     class Myadapter2 extends ArrayAdapter<String>{
-        private Context context;
-        private String Medname[],times[];
-        private TextView medicine,numoftimes;
-        Myadapter2(Context C,String Medname[],String times[])
-        {super(C,R.layout.helpermissed,R.id.missedmed,Medname);
-         this.context=C;
-         this.Medname=Medname;
-         this.times=times;
-        }
-
-        @NonNull
-        @Override
-        public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-            LayoutInflater layoutInflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            View view=layoutInflater.inflate(R.layout.helpermissed,parent,false);
-            medicine=(TextView)view.findViewById(R.id.missedmed);
-            numoftimes=(TextView)view.findViewById(R.id.numbermissed);
-            medicine.setText(Medname[position]);
-            numoftimes.setText("Missed "+times[position]+" times");
-            return view;
-        }
-    }
 

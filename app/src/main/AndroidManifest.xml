@@ -14,9 +14,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/pinkumbrella"
+        android:icon="@mipmap/iconlauncher"
         android:label="@string/app_name"
-        android:roundIcon="@drawable/circularprogress"
+        android:roundIcon="@mipmap/iconlauncher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar"
 
@@ -79,6 +79,25 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <service
+            android:name=".MyFirebaseMessageRecieveService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT"
+                    />
+            </intent-filter>
+        </service>
+        <service
+            android:name="MyFirebaseIdService"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action
+                    android:name="com.google.firebase.INSTANCE_ID_EVENT"></action>
+            </intent-filter>
+        </service>
 
     </application>
 

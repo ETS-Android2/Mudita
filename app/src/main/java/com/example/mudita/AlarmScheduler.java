@@ -34,15 +34,17 @@ public class AlarmScheduler extends DiskpersistenceHelper {
 
 
     public  static  void removeAlarmsForReminder(Context context, ArrayList<Medtimeobj> arrayList) {
-        Intent intent=new Intent(context.getApplicationContext(),AlarmReciever.class);
+        Intent intent=new Intent(context,AlarmReciever.class);
+        intent.setAction(context.getString(R.string.action_notify_admin));
         if(arrayList!=null&&arrayList.size()!=0) {
             if(arrayList.get(0).getMedicine().equals("Update491")&&arrayList.get(0).getTime().equals("002"))
-            {  int requestcode=491491;
+            {  Log.d("removeAlarms",""+arrayList.get(0).getMedicine(),null);
+                int requestcode=491491;
                 PendingIntent alarmIntent = PendingIntent.getBroadcast(context, requestcode, intent, PendingIntent.FLAG_UPDATE_CURRENT);
                 AlarmManager alarmMgr = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
                 alarmMgr.cancel(alarmIntent);
                 return;}
-            for(int i=0;i<arrayList.size();i++) {
+            for(int i=0;i<100;i++) {
                 PendingIntent alarmIntent = PendingIntent.getBroadcast(context, i, intent, PendingIntent.FLAG_UPDATE_CURRENT);
 
                 AlarmManager alarmMgr = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
@@ -52,12 +54,28 @@ public class AlarmScheduler extends DiskpersistenceHelper {
     }
 
     private static PendingIntent createPendingIntent(Context context, Medtimeobj medtimeobj, String day, int requestcode)
-    {    if(medtimeobj.getMedicine().equals("Update491")&&medtimeobj.getTime().equals("002"))
-        {requestcode=491491;}
-        Intent intent=new Intent(context, AlarmReciever.class);
-        intent.setAction(context.getString(R.string.action_notify_admin));
+    {    Intent intent;
         StringBuilder stringBuilder=new StringBuilder();
-       String str1=""+medtimeobj.getTime();
+        if(medtimeobj.getMedicine().equals("Update491")&&medtimeobj.getTime().equals("002"))
+        {requestcode=491491;
+            intent=new Intent(context, BootReceiver.class);
+            intent.setAction(context.getString(R.string.action_notify_admin));
+            stringBuilder.append("Update491");
+            String str1=""+medtimeobj.getTime();
+            Bundle bundle=new Bundle();
+            bundle.putString("Medicine",stringBuilder.toString());
+            bundle.putString("Time",str1);
+            bundle.putString("Day",day);
+            intent.putExtra("Bundle",bundle);
+            Log.d("CreatependingIntent","Time "+str1+" Medicine "+stringBuilder.toString()+"Day "+day);
+        }
+        else
+        {intent=new Intent(context,AlarmReciever.class);
+            intent.setAction(context.getString(R.string.action_notify_admin));
+            stringBuilder.append(medtimeobj.getMedicine(),0,medtimeobj.getMedicine().length()-5);
+        }
+
+        String str1=""+medtimeobj.getTime();
         Bundle bundle=new Bundle();
         bundle.putString("Medicine",stringBuilder.toString());
         bundle.putString("Time",str1);

@@ -135,6 +135,7 @@
                         android:layout_alignParentBottom="true"
                         android:layout_marginLeft="85dp"
                         android:layout_marginBottom="20dp"
+
                         android:layout_alignLeft="@+id/card2"
                         android:gravity="center"
                         android:text="0"
@@ -212,7 +213,7 @@
                         android:layout_marginTop="8dp"
                         android:layout_toRightOf="@+id/textremaining"
                         android:fontFamily="@font/alike_angular"
-                        android:text="Azithrom 500(Tb)"
+                        android:text="........."
                         android:textColor="#D83738"
                         android:textSize="13sp" />
                 </RelativeLayout>
@@ -345,7 +346,8 @@
                         android:layout_height="95dp"
                         android:layout_alignLeft="@+id/missed"
                         android:layout_marginLeft="120dp"
-                        android:src="@drawable/add" />
+                        android:src="@drawable/add"
+                        android:layout_marginRight="20dp"/>
                 </RelativeLayout>
 
             </LinearLayout>

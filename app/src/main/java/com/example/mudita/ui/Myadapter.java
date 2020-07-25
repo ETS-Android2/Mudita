@@ -20,13 +20,13 @@ import com.example.mudita.R;
 
 public class Myadapter extends ArrayAdapter<String> {
     private Context context;
-    private int arr[];
+    private long arr[];
     private TextView medicinename;
     private ProgressBar Horizontalbar;
     private String naam[];
    private GradientDrawable gradientDrawable;
 
-    public Myadapter(Context C, String name1[], int arr1[])
+    public Myadapter(Context C, String name1[], long arr1[])
     {super(C, R.layout.helperstats,R.id.Medicinename,name1);
      this.context=C;
      this.naam=name1;
@@ -40,11 +40,13 @@ public class Myadapter extends ArrayAdapter<String> {
          View helper=layoutInflater.inflate(R.layout.helperstats,parent,false);
          medicinename=(TextView)helper.findViewById(R.id.Medicinename);
          Horizontalbar=(ProgressBar)helper.findViewById(R.id.horizontalprogbar);
-          medicinename.setText(naam[position]);
-          Horizontalbar.setProgress(arr[position]);
+         if(naam!=null&&naam.length!=0)
+         {medicinename.setText(naam[position]+"  "+arr[position]+"%");
+          Horizontalbar.setProgress((int) arr[position]);}
           gradientDrawable =new GradientDrawable();
           gradientDrawable.setShape(GradientDrawable.RECTANGLE);
           gradientDrawable.setCornerRadius(50);
+
 
 
           if(position%4==0)
@@ -63,4 +65,8 @@ public class Myadapter extends ArrayAdapter<String> {
 
         return helper;
     }
+
+
+
+
 }

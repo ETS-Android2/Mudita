@@ -6,50 +6,19 @@
     </shared>
   </component>
   <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="arr" />
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Firebase" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8bef5858-afa8-4af6-af52-023fb9e2bdf7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/AlarmReciever.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/AlarmScheduler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/AppGlobalReciever.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/ArchLifecycleApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/BootReceiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/DbandAppCom.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/NotificationHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/med.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/raw/alarmtone.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/DBtoPhone.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/DBtoPhone.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/DiskpersistenceHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/DiskpersistenceHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/GlobalVariables.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/Mainscreen1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/Mainscreen1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/Medtimeobj.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/Medtimeobj.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/ui/home/HomeFragment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/mudita/ui/home/HomeFragment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_mainscreen1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_mainscreen1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-    </list>
+    <list default="true" id="8bef5858-afa8-4af6-af52-023fb9e2bdf7" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="eb484e67" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_28" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -132,10 +101,11 @@
     <option name="LAST_EDITED_BUILD_TYPE" value="debug" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res\raw" />
-      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\build" />
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res\drawable-v21" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\build" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.example.mudita" />
@@ -143,11 +113,15 @@
     <key name="android.template.packageName">
       <recent name="com.example.mudita" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app" />
-      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res\drawable-v21" />
-      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res" />
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.mudita" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res\mipmap\mipmap-hdpi" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res\mipmap-hdpi" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\src\main\res\raw" />
       <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app\build" />
+      <recent name="C:\Users\user\AndroidStudioProjects\Mudita\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -357,7 +331,14 @@
       <option name="project" value="LOCAL" />
       <updated>1593871190110</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database.&#10;Timer is showing the time left for the next activity&#10;Alarm is ringing (but check if data are retrive every night at 00:02 or not )&#10;Add a friend feature is added&#10;Notificifation is send to the friend when alarm rings">
+      <created>1595705221306</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1595705221306</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -401,17 +382,16 @@
     <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)" />
     <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database." />
     <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database.&#10;Timer is showing the time left for the next activity" />
-    <option name="LAST_COMMIT_MESSAGE" value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database.&#10;Timer is showing the time left for the next activity" />
+    <MESSAGE value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database.&#10;Timer is showing the time left for the next activity&#10;Alarm is ringing (but check if data are retrive every night at 00:02 or not )&#10;Add a friend feature is added&#10;Notificifation is send to the friend when alarm rings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Splashscreen(without graphics)          &#10;Loginscreen done(without forgot password)&#10;Registrationscreen&#10;Google Sign in(complete with some features still required to be added like checking already registered user)&#10;Facebook Login (Some features need to be added later)&#10;Mainscreen1 is in progress(Now a bit more upgraded)&#10;StatsScreen's basics done and working fine.UI Upgradation  still reguired.&#10;Missed  Screen done!&#10;Working on Add screen.(still working but we have upgraded it a bit)&#10;working on add screen settime (comiting in the middle as i am having some abrupt shutdown issue on my laptop)&#10;working screen almost done.(Done button and small updates are still left)&#10;working on done button and making data ready (so that i can store and retrive data from firebase efficiently)&#10;still working on done button and Firebase realtime Database.&#10;Timer is showing the time left for the next activity&#10;Alarm is ringing (but check if data are retrive every night at 00:02 or not )&#10;Add a friend feature is added&#10;Notificifation is send to the friend when alarm rings" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
+        <line-breakpoint type="java-method">
           <url>jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.facebook.android/facebook-common/5.15.3/da10d66520c279b843992c24893cab96eb471e65/facebook-common-5.15.3-sources.jar!/com/facebook/FacebookCallback.java</url>
           <line>44</line>
-          <properties class="com.facebook.FacebookCallback" method="onSuccess">
-            <option name="EMULATED" value="true" />
-          </properties>
+          <properties class="com.facebook.FacebookCallback" method="onSuccess" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

@@ -13,6 +13,7 @@ import android.media.MediaPlayer;
 import android.media.Ringtone;
 import android.media.RingtoneManager;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,10 +34,7 @@ public class NotificationHelper extends AppCompatActivity {
 
 
     public static void createNotificationChannel(Context context, int importance, Boolean showBadge, String name, String description) {
-        long[] arr=new long[3];
-        arr[0]=1000;
-        arr[1]=2000;
-        arr[2]=1000;
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
            /* name = context.getString(R.string.channelname);
             description = context.getString(R.string.channelDescription);
@@ -44,7 +42,6 @@ public class NotificationHelper extends AppCompatActivity {
             NotificationChannel Channel = new NotificationChannel("Alarmtone", name, importance);
             Channel.setDescription(description);
             Channel.setShowBadge(showBadge);
-            Channel.setVibrationPattern(arr);
             Channel.enableVibration(true);
 
             NotificationManager manager = context.getSystemService(NotificationManager.class);
@@ -75,19 +72,21 @@ public class NotificationHelper extends AppCompatActivity {
 
 
     public static void createNotificationforAlarm(Context context, Bundle bundle) {
-        NotificationCompat.Builder groupbuilder = BuildGroupNotification(context, bundle);
-        NotificationCompat.Builder notificationbuilder = BuildNotificationforalarm(context, bundle);
-        PendingIntent adminpendingIntent1 = CreatePendingIntentForAction(context, bundle,"Done");
-        PendingIntent adminpendingIntent2 = CreatePendingIntentForAction(context, bundle,"Cancel");
-        PendingIntent adminpendingIntent3 = CreatePendingIntentForAction(context, bundle,"Missed");
+        int random= new Random().nextInt(1000);
+        if(bundle.get("Medicine").toString().equals("Update491")&&bundle.get("Time").toString().equals("002"))
+        {
+            return;}
+        NotificationCompat.Builder groupbuilder = BuildGroupNotification(context, bundle, random);
+        NotificationCompat.Builder notificationbuilder = BuildNotificationforalarm(context, bundle, random);
+        PendingIntent adminpendingIntent1 = CreatePendingIntentForAction(context, bundle,"Done",random);
+        PendingIntent adminpendingIntent2 = CreatePendingIntentForAction(context, bundle,"Cancel",random);
+        PendingIntent adminpendingIntent3 = CreatePendingIntentForAction(context, bundle,"Missed",random);
 
         notificationbuilder.addAction(R.drawable.ic_menu_slideshow, context.getString(R.string.DoneAction), adminpendingIntent1);
         notificationbuilder.addAction(R.drawable.ic_menu_slideshow, context.getString(R.string.CancelAction), adminpendingIntent2);
         notificationbuilder.addAction(R.drawable.ic_menu_slideshow, context.getString(R.string.MissedAction), adminpendingIntent3);
         NotificationManagerCompat notificationManager = NotificationManagerCompat.from(context);
-       int random= new Random().nextInt(1000);
-       if(bundle.get("Medicine").toString().equals("Update491")&&bundle.get("Time").toString().equals("002"))
-       {return;}
+
         notificationManager.notify(random, groupbuilder.build());
         notificationManager.notify(random, notificationbuilder.build());
         final Ringtone ringtone=RingtoneManager.getRingtone(context,RingtoneManager.getDefaultUri(RingtoneManager.TYPE_RINGTONE));
@@ -101,40 +100,21 @@ public class NotificationHelper extends AppCompatActivity {
                timer.cancel();}
                else
                {ringtone.play();}
-
-
-
-
             }
 
         },0,10000);
-       /* Thread thread=new Thread(new Runnable() {
-            @Override
-            public void run() {
 
-            }
-        });
-        try {
-            thread.sleep(6000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
-        thread.start();*/
 
 
     }
 
-    private static NotificationCompat.Builder BuildGroupNotification(Context context, Bundle bundle) {
-        long[] arr=new long[3];
-        arr[0]=1000;
-        arr[1]=2000;
-        arr[2]=1000;
+    private static NotificationCompat.Builder BuildGroupNotification(Context context, Bundle bundle,int random) {
+
         String channelid = "Alarmtone";
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, channelid);
         Uri uri = Uri.parse("android.resource://" + context.getPackageName() + "/raw/alarmtone");
         builder.setSmallIcon(R.drawable.med)
                 .setColor(Color.BLACK)
-                .setVibrate(arr)
                 .setContentTitle(bundle.get("Medicine").toString())
                 .setContentText("Hi,Content Text Group")
                 .setStyle(new NotificationCompat.BigTextStyle().bigText("This a group Notification bigtextstyle"))
@@ -146,19 +126,15 @@ public class NotificationHelper extends AppCompatActivity {
         return builder;
     }
 
-    private static NotificationCompat.Builder BuildNotificationforalarm(Context context, Bundle bundle) {
+    private static NotificationCompat.Builder BuildNotificationforalarm(Context context, Bundle bundle,int random) {
         String channelid = "Alarmtone";
-        long[] arr=new long[3];
-        arr[0]=1000;
-        arr[1]=2000;
-        arr[2]=1000;
+
         NotificationCompat.Builder builder = new NotificationCompat.Builder(context, channelid);
         builder.setSmallIcon(R.drawable.med)
                /* .setSound(Uri.parse("android.resource://" + context.getPackageName() + "/raw/alarmtone"))*/
                 .setContentTitle(bundle.get("Medicine").toString())
                 .setContentText("Content Text!")
                 .setColor(Color.BLACK)
-                .setVibrate(arr)
                 .setStyle(new NotificationCompat.BigTextStyle().bigText("It's time for your medicine "+bundle.get("Medicine").toString()))
                 .setGroup("Mudita_Reminder")
                 .setAutoCancel(true);
@@ -171,14 +147,13 @@ public class NotificationHelper extends AppCompatActivity {
         return builder;
     }
 
-    private static PendingIntent CreatePendingIntentForAction(Context context, Bundle bundle,String actionname) {
+    private static PendingIntent CreatePendingIntentForAction(Context context, Bundle bundle,String actionname,int random) {
         Intent adminintent;
-      /*  if(actionname.equals("Done"))
-        {adminintent = new Intent(context, BootReceiver.class);}
-        else*/
         {adminintent = new Intent(context, AppGlobalReciever.class);}
         adminintent.setAction(context.getString(R.string.action_medicine_administered)+actionname);
         adminintent.putExtra("Bundle",bundle);
+        adminintent.putExtra("Random",""+random);
+        adminintent.putExtra("Actionname",actionname);
         Log.d("CreatePendingIforAction",bundle.getString("Medicine")+" "+bundle.get("Time").toString(), null);
         return PendingIntent.getBroadcast(context, ADMINISTER_REQUEST_CODE, adminintent, PendingIntent.FLAG_UPDATE_CURRENT);
 
