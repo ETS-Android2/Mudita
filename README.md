@@ -49,6 +49,7 @@ This is done to help the user monitor their history of doses.
 
 # Adding a friend
 Mudita lets you add friends, who will be notified when your dose intake time is reached.
+
 Friend's Phone
 
 You have been added as a friend
