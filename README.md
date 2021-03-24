@@ -41,7 +41,7 @@ The App automatically schedules all the doses for the entire course and notify y
 1. The app displays the statistical record of all the medicines taken(individually) and shows the average success achieved of all the medicines combined.
 2. And a 'missed' record of medicines over 14 days.
 
-This is done to help the user monitoring their history of doses.
+This is done to help the user monitor their history of doses.
 
 
  1. <img src="https://user-images.githubusercontent.com/62389305/112301355-dbd8e900-8cbf-11eb-8d7b-dd3edeb78a81.jpg"  width="270" height="480"> 2.  <img src="https://user-images.githubusercontent.com/62389305/112301350-daa7bc00-8cbf-11eb-9e6a-99abff0ca7d2.jpg" width="270" height="480">
