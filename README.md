@@ -8,6 +8,13 @@ It also helps user by making sure the user gets a health tip. Everytime he opens
 3. Firebase RealTime Database
 4. Firebase Push Notification Services
 
+# Features
+1. Schedules multiple medicine's timing and rings until the last day of your course. 
+2. Rings Alarm, whenever time of taking a particular dose is reached.
+3. Stores and shows the statistical Report of each medicine.
+4. Stores and shows a dedicated report of missed doses(over last 14 days)
+5. Add friends, Who will be notified each time your dose timing is reached. 
+
 # Sign Up/Login In
 The Authentication of the user is made secure and easier by using three of the most common authenticator.
 
@@ -22,7 +29,17 @@ The Authentication of the user is made secure and easier by using three of the m
  4. Timings?
  5. That's it.
  
-1.  <img src="https://user-images.githubusercontent.com/62389305/112292899-8dbfe780-8cb7-11eb-85bb-73ef7cdd1601.jpg" width="250" height="480">   2.  <img src="https://user-images.githubusercontent.com/62389305/112292906-8f89ab00-8cb7-11eb-9d17-d5bac71d2e28.jpg" width="250" height="480">    3.  <img src="https://user-images.githubusercontent.com/62389305/112292904-8ef11480-8cb7-11eb-9ce6-69c2f8c2159c.jpg" width="250" height="480">
+  1. <img src="https://user-images.githubusercontent.com/62389305/112292899-8dbfe780-8cb7-11eb-85bb-73ef7cdd1601.jpg" width="250" height="480">   2.  <img src="https://user-images.githubusercontent.com/62389305/112292906-8f89ab00-8cb7-11eb-9d17-d5bac71d2e28.jpg" width="250" height="480">    3.  <img src="https://user-images.githubusercontent.com/62389305/112292904-8ef11480-8cb7-11eb-9ce6-69c2f8c2159c.jpg" width="250" height="480">
+ 
+# Let the app to ring you up on time
+The App automatically schedules all the doses for the entire course and notify you everytime on time.
+
+1.  <img src="https://user-images.githubusercontent.com/62389305/112295947-6ae30280-8cba-11eb-8a0b-d381869bdec7.jpg" width="250" height="480">  2.   <img src="https://user-images.githubusercontent.com/62389305/112295954-6cacc600-8cba-11eb-9dc7-22d74ed03811.jpg" width="250" height="250">
+
+
+
+
+
 
  
  
