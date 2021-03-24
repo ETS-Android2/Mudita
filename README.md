@@ -48,6 +48,10 @@ This is done to help the user monitor their history of doses.
 
 
 # Adding a friend
+Mudita lets you add friends, who will be notified when your dose intake time is reached.
+ <img src="https://user-images.githubusercontent.com/62389305/112308077-b9e36480-8cc7-11eb-82f0-a6f03878f27c.jpg"  width="270" height="480">
+  <img src="https://user-images.githubusercontent.com/62389305/112308080-bbad2800-8cc7-11eb-87f0-ee30a9c5202c.jpg"  width="270" height="480">
+
 
 
 
