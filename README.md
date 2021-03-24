@@ -32,7 +32,7 @@ The Authentication of the user is made secure and easier by using three of the m
  
   1. <img src="https://user-images.githubusercontent.com/62389305/112292899-8dbfe780-8cb7-11eb-85bb-73ef7cdd1601.jpg" width="250" height="480">   2.  <img src="https://user-images.githubusercontent.com/62389305/112292906-8f89ab00-8cb7-11eb-9d17-d5bac71d2e28.jpg" width="250" height="480">    3.  <img src="https://user-images.githubusercontent.com/62389305/112292904-8ef11480-8cb7-11eb-9ce6-69c2f8c2159c.jpg" width="250" height="480">
  
-# Let the app to ring you up on time
+# Let the app ring you up on time
 The App automatically schedules all the doses for the entire course and notify you everytime on time.
 
 1.  <img src="https://user-images.githubusercontent.com/62389305/112295947-6ae30280-8cba-11eb-8a0b-d381869bdec7.jpg" width="270" height="480">  2 .   <img src="https://user-images.githubusercontent.com/62389305/112295954-6cacc600-8cba-11eb-9dc7-22d74ed03811.jpg" width="270" height="250">
