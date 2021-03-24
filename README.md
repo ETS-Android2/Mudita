@@ -1,6 +1,6 @@
 # Mudita 
-Mudita is a Android Application designed to help people with medicine schedules and to keep track on their doses record and to give a statistical analysis. It also informs a friend, when the dose intake time is  reached.
-Finally, it also helps user by making sure the user gets a health tip,everytime he opens the app.
+Mudita is a Android Application designed to help people with medicine schedules.It keeps track on user's medicine records and gives a statistical analysis. It also informs a friend, when the dose intake time is reached.
+Finally, it also helps user by making sure, user gets a health tip everytime he opens the app.
 
 # Major Libraries/Services Used
 1. Firebase Authentication(Email,Google,Facebook)
@@ -10,11 +10,11 @@ Finally, it also helps user by making sure the user gets a health tip,everytime 
 5. Retrofit
 
 # Features
-1. Schedules multiple medicine's timing and rings until the last day of your course. 
+1. Schedules multiple medicine's intake timing and rings until the last day of your course. 
 2. Rings Alarm, whenever time of taking a particular dose is reached.
-3. Stores and shows the statistical Report of each medicine.
+3. Stores and shows the statistical report of each medicine.
 4. Stores and shows a dedicated report of missed doses(over last 14 days)
-5. Add friends, Who will be notified each time your dose timing is reached. 
+5. Add friends, who will be notified each time your dose timing is reached. 
 
 # Sign Up/Login In
 The Authentication of the user is made secure and easier by using three of the most common authenticator.
@@ -33,13 +33,13 @@ The Authentication of the user is made secure and easier by using three of the m
  1. <img src="https://user-images.githubusercontent.com/62389305/112292899-8dbfe780-8cb7-11eb-85bb-73ef7cdd1601.jpg" width="250" height="480">   2.  <img src="https://user-images.githubusercontent.com/62389305/112292906-8f89ab00-8cb7-11eb-9d17-d5bac71d2e28.jpg" width="250" height="480">    3.  <img src="https://user-images.githubusercontent.com/62389305/112292904-8ef11480-8cb7-11eb-9ce6-69c2f8c2159c.jpg" width="250" height="480">
  
 # Let the app ring you up on time
-The App automatically schedules all the doses for the entire course and notify you everytime on time.
+The App automatically schedules all the doses for the entire course and notify the user everytime on time.
 
 1.  <img src="https://user-images.githubusercontent.com/62389305/112295947-6ae30280-8cba-11eb-8a0b-d381869bdec7.jpg" width="270" height="480">  2 .   <img src="https://user-images.githubusercontent.com/62389305/112295954-6cacc600-8cba-11eb-9dc7-22d74ed03811.jpg" width="270" height="250">
 
 # Statistics
 1. The app displays the statistical record of all the medicines taken(individually) and shows the average success achieved of all the medicines combined.
-2. And a 'missed' record of medicines over 14 days.
+2.  And a 'missed' record of medicines over 14 days.
 
 This is done to help the user monitor their history of doses.
 
@@ -48,7 +48,7 @@ This is done to help the user monitor their history of doses.
 
 
 # Adding a friend
-Mudita lets you add friends, who will be notified when your dose intake time is reached.
+Mudita lets you add friends, who will be notified whenever your dose intake time is reached.
 
 Friend's Phone
 
