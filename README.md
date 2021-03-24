@@ -1,6 +1,6 @@
 # Mudita 
 Mudita is a Android Application designed to help people with medicine schedules and to keep track on their doses record and to give a statistical analysis. It also informs a friend, when the dose intake time is  reached.
-It also helps user by making sure the user gets a health tip. Everytime he opens the app.
+Finally, it also helps user by making sure the user gets a health tip,everytime he opens the app.
 
 # Major Libraries/Services Used
 1. Firebase Authentication(Email,Google,Facebook)
