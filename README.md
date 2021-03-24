@@ -9,14 +9,14 @@ Mudita is a Android Application designed to help people with medicine schedules 
 # Sign Up/Login In
 The Authentication of the user is made secure and easier by using three of the most common authenticator.
 
-1. <img src="https://user-images.githubusercontent.com/62389305/112289892-b2ff2680-8cb4-11eb-8f5b-b10ebdcb549a.jpg" width="250" height="510">  2.   <img src="https://user-images.githubusercontent.com/62389305/112289895-b4305380-8cb4-11eb-8770-0f8dbea2ef1a.jpg" width="250" height="510">  3.  <img src="https://user-images.githubusercontent.com/62389305/112289897-b4305380-8cb4-11eb-8305-c8583f4ebd3c.jpg" width="250" height="510">
+1.<img src="https://user-images.githubusercontent.com/62389305/112289897-b4305380-8cb4-11eb-8305-c8583f4ebd3c.jpg" width="250" height="490">   2.   <img src="https://user-images.githubusercontent.com/62389305/112289895-b4305380-8cb4-11eb-8770-0f8dbea2ef1a.jpg" width="250" height="490">  3.  <img src="https://user-images.githubusercontent.com/62389305/112289892-b2ff2680-8cb4-11eb-8f5b-b10ebdcb549a.jpg" width="250" height="490"> 
 
 
 
 
 
 
-<img src="https://user-images.githubusercontent.com/62389305/112288011-f062b480-8cb2-11eb-8f84-9c7504ff08f3.jpg" width="300" height="620">
+//<img src="https://user-images.githubusercontent.com/62389305/112288011-f062b480-8cb2-11eb-8f84-9c7504ff08f3.jpg" width="300" height="620">
 
 
 
