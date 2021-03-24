@@ -34,7 +34,7 @@ The Authentication of the user is made secure and easier by using three of the m
 # Let the app to ring you up on time
 The App automatically schedules all the doses for the entire course and notify you everytime on time.
 
-1.  <img src="https://user-images.githubusercontent.com/62389305/112295947-6ae30280-8cba-11eb-8a0b-d381869bdec7.jpg" width="250" height="480">  2.   <img src="https://user-images.githubusercontent.com/62389305/112295954-6cacc600-8cba-11eb-9dc7-22d74ed03811.jpg" width="250" height="250">
+1.  <img src="https://user-images.githubusercontent.com/62389305/112295947-6ae30280-8cba-11eb-8a0b-d381869bdec7.jpg" width="270" height="480">  2 .   <img src="https://user-images.githubusercontent.com/62389305/112295954-6cacc600-8cba-11eb-9dc7-22d74ed03811.jpg" width="270" height="250">
 
 
 
