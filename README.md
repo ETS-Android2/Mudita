@@ -3,10 +3,11 @@ Mudita is a Android Application designed to help people with medicine schedules 
 It also helps user by making sure the user gets a health tip. Everytime he opens the app.
 
 # Major Libraries/Services Used
-1. Picaso
-2. Firebase Authentication(Email,Google,Facebook)
-3. Firebase RealTime Database
-4. Firebase Push Notification Services
+1. Firebase Authentication(Email,Google,Facebook)
+2. Firebase RealTime Database
+3. Firebase Push Notification Services
+4. Picaso
+5. Retrofit
 
 # Features
 1. Schedules multiple medicine's timing and rings until the last day of your course. 
