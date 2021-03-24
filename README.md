@@ -30,7 +30,7 @@ The Authentication of the user is made secure and easier by using three of the m
  4. Timings?
  5. That's it.
  
-  1. <img src="https://user-images.githubusercontent.com/62389305/112292899-8dbfe780-8cb7-11eb-85bb-73ef7cdd1601.jpg" width="250" height="480">   2.  <img src="https://user-images.githubusercontent.com/62389305/112292906-8f89ab00-8cb7-11eb-9d17-d5bac71d2e28.jpg" width="250" height="480">    3.  <img src="https://user-images.githubusercontent.com/62389305/112292904-8ef11480-8cb7-11eb-9ce6-69c2f8c2159c.jpg" width="250" height="480">
+ 1. <img src="https://user-images.githubusercontent.com/62389305/112292899-8dbfe780-8cb7-11eb-85bb-73ef7cdd1601.jpg" width="250" height="480">   2.  <img src="https://user-images.githubusercontent.com/62389305/112292906-8f89ab00-8cb7-11eb-9d17-d5bac71d2e28.jpg" width="250" height="480">    3.  <img src="https://user-images.githubusercontent.com/62389305/112292904-8ef11480-8cb7-11eb-9ce6-69c2f8c2159c.jpg" width="250" height="480">
  
 # Let the app ring you up on time
 The App automatically schedules all the doses for the entire course and notify you everytime on time.
@@ -39,8 +39,9 @@ The App automatically schedules all the doses for the entire course and notify y
 
 # Statistics
 1. The app displays the statistical record of all the medicines taken(individually) and shows the average success achieved of all the medicines combined.
-2. And a 'missed' record of medicines over 14 days. 
-  This is done to help the user monitoring their history of doses.
+2. And a 'missed' record of medicines over 14 days.
+
+This is done to help the user monitoring their history of doses.
 
 
  1. <img src="https://user-images.githubusercontent.com/62389305/112301355-dbd8e900-8cbf-11eb-8d7b-dd3edeb78a81.jpg"  width="270" height="480"> 2.  <img src="https://user-images.githubusercontent.com/62389305/112301350-daa7bc00-8cbf-11eb-9e6a-99abff0ca7d2.jpg" width="270" height="480">
