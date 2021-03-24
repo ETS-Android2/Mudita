@@ -71,8 +71,6 @@ Mudita lets you add friends, who will be notified when your dose intake time is 
 
 
 
-//<img src="https://user-images.githubusercontent.com/62389305/112288011-f062b480-8cb2-11eb-8f84-9c7504ff08f3.jpg" width="300" height="620">
-
 
 
 
