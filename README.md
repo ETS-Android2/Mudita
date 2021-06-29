@@ -60,7 +60,7 @@ You have been added as a friend
   
 Notification on friend's phone informing about the user's dose time.
   
-  <img src="https://user-images.githubusercontent.com/62389305/112308080-bbad2800-8cc7-11eb-87f0-ee30a9c5202c.jpg"  width="270" height="480">
+  <img src="https://user-images.githubusercontent.com/62389305/112308080-bbad2800-8cc7-11eb-87f0-ee30a9c5202c.jpg"  width="270" height="480"></br>
 
 
 
