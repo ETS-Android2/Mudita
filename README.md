@@ -23,7 +23,7 @@ The Authentication of the user is made secure and easier by using three of the m
 
 
 # Scheduling your Medicine
- User is only required to provide minimal information about the medicine like:
+ User is only required to provide minimal information about the medicine like :
  1. Name of the Medicine( For obvious reasons :) 
  2. Number of Doses
  3. Which Days?
